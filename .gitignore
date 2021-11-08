@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# Why does default gitignore not have this
+.DS_Store
+
+# My own trashbin
+old/

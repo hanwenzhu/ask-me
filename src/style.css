@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0;
+    margin: 0;
+    background: black;
+    font-size: 8vw;
+}
+
+#question, #question-clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10vw;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+    resize: none;
+    background: transparent;
+
+    text-align: left;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+
+    font-size: inherit;
+    font-family: inherit;
+    color: #73b6ff;
+}
+
+#output {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100vw;
+    padding: 10vw;
+
+    text-align: right;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+
+    color: #ffe7a9;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#question-clone::after {
+    content: '?';
+    position: absolute;
+    visibility: hidden;
+}
+
+#question-clone.hidden::after {
+    visibility: visible;
+}
