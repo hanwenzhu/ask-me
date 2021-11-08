@@ -2,11 +2,11 @@ import QuestionAnswerer from './qa.js';
 // import FaceDetector from './face.js';
 
 
-const QA_MODEL_PATH = '/static/models/albert/model.json';
-const QA_VOCAB_PATH = '/static/models/albert/vocab.json';
-const BLAZEFACE_MODEL_PATH = '/static/models/blazeface/model.json';
-const FACEMESH_MODEL_PATH = '/static/models/facemesh/model.json';
-const IRIS_MODEL_PATH = '/static/models/iris/model.json';
+const QA_MODEL_PATH = 'static/models/albert/model.json';
+const QA_VOCAB_PATH = 'static/models/albert/vocab.json';
+const BLAZEFACE_MODEL_PATH = 'static/models/blazeface/model.json';
+const FACEMESH_MODEL_PATH = 'static/models/facemesh/model.json';
+const IRIS_MODEL_PATH = 'static/models/iris/model.json';
 
 
 const QA_THRESHOLD = 10.0;

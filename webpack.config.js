@@ -5,11 +5,11 @@ module.exports = (env, argv) => ({
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'static' },
+        { from: 'static', to: 'static' },
       ],
     }),
     new HtmlWebpackPlugin({
-      title: argv.mode === 'development' ? 'Development' : '',
+      title: argv.mode === 'development' ? 'Ask Me (Development)' : 'Ask Me',
     }),
   ],
   module: {
